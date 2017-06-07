@@ -4,6 +4,10 @@
 +++
 
 ### Supported by GitPitch Markdown Slides
+
++++
+
+## Supported by GitPitch Markdown Slides
 See <a href="https://github.com/gitpitch/gitpitch/wiki/Slide-Markdown" target="_blank">GitPitch Wiki</a> for details.
 For best viewing experience press **F** key to go fullscreen.
 
@@ -30,4 +34,3 @@ For best viewing experience press **F** key to go fullscreen.
 ---
 
 ### Mutation in GraphQL
-
