@@ -1,0 +1,30 @@
+{
+  "name": "graphql_server",
+  "version": "1.0.0",
+  "description": "graphql server for 8gcool app family",
+  "main": "server.js",
+  "dependencies": {
+    "bcrypt": "^1.0.2",
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "graphql": "^0.10.1",
+    "graphql-server-express": "^0.8.0",
+    "graphql-tools": "^1.0.0",
+    "ioredis": "^3.1.1",
+    "jsonwebtoken": "^7.4.1",
+    "winston": "^2.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "keywords": [
+    "graphql",
+    "server"
+  ],
+  "author": "Beinan Wang",
+  "license": "MIT"
+}

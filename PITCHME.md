@@ -3,17 +3,24 @@
 
 +++
 
-### Supported by GitPitch Markdown Slides
-
-+++
-
-## Supported by GitPitch Markdown Slides
+#### Supported by GitPitch Markdown Slides
 See <a href="https://github.com/gitpitch/gitpitch/wiki/Slide-Markdown" target="_blank">GitPitch Wiki</a> for details.
 For best viewing experience press **F** key to go fullscreen.
 
 ---
 
-### GraphQL Introduction
+#### GraphQL Introduction
+
++++
+
+#### What's the benefits?
+Ask for what you need, get exactly that
+One endpoint to access your data
+Better Query Efficiency: Get many resources in a single request
+
++++
+#### Introspection system
+You know what kind of queries the server supports.
 
 ---
 
