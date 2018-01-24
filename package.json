@@ -1,7 +1,7 @@
 {
   "name": "graphql_server",
   "version": "1.0.0",
-  "description": "graphql server for 8gcool app family",
+  "description": "graphql server for starters",
   "main": "server.js",
   "dependencies": {
     "bcrypt": "^1.0.2",
@@ -12,6 +12,7 @@
     "graphql-tools": "^1.0.0",
     "ioredis": "^3.1.1",
     "jsonwebtoken": "^7.4.1",
+    "lodash": "^4.17.4",
     "winston": "^2.3.1"
   },
   "devDependencies": {
