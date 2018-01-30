@@ -6,12 +6,35 @@ const logger = require('../utils/logger');
 const product_data = require('../data/product_data')
 
 const typeDefs = [`
-  type Product {
+  interface Product {
     id: ID!,
     name: String!,
-    description: String,
+    price: Float,
+    inStock: Int,
+    isFreeShipping: Boolean,
     images: [String]
   }
+
+  type Wine implements Product {
+    id: ID!,
+    name: String!,
+    price: Float,
+    inStock: Int,
+    isFreeShipping: Boolean,
+    images: [String],
+    year: Int!
+  } 
+
+  type Book implements Product {
+    id: ID!,
+    name: String!,
+    price: Float,
+    inStock: Int,
+    isFreeShipping: Boolean,
+    images: [String],
+    isbn: String!
+  }
+
   type Query {
     getAllProducts: [Product]   
   }
@@ -25,6 +48,19 @@ const resolvers = {
   Query: {
     getAllProducts(root, ignore, context) {
       return product_data;
+    }
+  },
+  Product: {
+    __resolveType(obj, context, info){
+      if(obj.year){
+        return 'Wine';
+      }
+
+      if(obj.isbn){
+        return 'Book';
+      }
+
+      return null;
     }
   }
 };
