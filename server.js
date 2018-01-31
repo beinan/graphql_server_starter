@@ -1,7 +1,7 @@
 const config = require('./config')
 const express = require('express');
 const bodyParser = require('body-parser');
-const { graphqlExpress, graphiqlExpress } = require('graphql-server-express');
+const { graphqlExpress, graphiqlExpress } = require('apollo-server-express');
 const root_schema = require('./schema/root')
 const logger = require('./utils/logger')
 const app = express()
