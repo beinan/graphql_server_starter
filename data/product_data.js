@@ -9,7 +9,8 @@ const data = [
   },
   {
     id: "10002",
-    name: "A",
+    name: "A Brief History of Time",
+    inStock: 3000,
     isbn: "0001"
   }
 ]
